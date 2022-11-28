@@ -20,6 +20,7 @@ q10_part_13 VARCHAR(255),
 q10_part_14 VARCHAR(255),
 q10_part_15 VARCHAR(255),
 q10_part_16 VARCHAR(255),
+q10_other VARCHAR(255),
 d482xta VARCHAR(255),
 PRIMARY KEY (index_sql));
 
@@ -30,9 +31,9 @@ age VARCHAR(255),
 gender VARCHAR(255),
 index_sql INT NOT NULL,
 PRIMARY KEY (index_xml),
-CONSTRAINT fk_tabla_sql_tabla_xml
+CONSTRAINT fk_data_sql_data_xml
 FOREIGN KEY (index_sql)
-REFERENCES tabla_sql (index_sql) ON DELETE CASCADE ON UPDATE CASCADE);
+REFERENCES data_sql (index_sql) ON DELETE CASCADE ON UPDATE CASCADE);
 
 CREATE TABLE data_txt (
 index_txt INT NOT NULL AUTO_INCREMENT,
@@ -59,9 +60,9 @@ q34 VARCHAR(255),
 q35 VARCHAR(255),
 q41 VARCHAR(255),
 PRIMARY KEY (index_txt),
-CONSTRAINT fk_tabla_sql_tabla_txt
+CONSTRAINT fk_data_sql_data_txt
 FOREIGN KEY (index_sql)
-REFERENCES tabla_sql (index_sql) ON DELETE CASCADE ON UPDATE CASCADE);
+REFERENCES data_sql (index_sql) ON DELETE CASCADE ON UPDATE CASCADE);
 
 
 

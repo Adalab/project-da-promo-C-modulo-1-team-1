@@ -17,5 +17,6 @@ UPDATE data_sql SET  q10_part_14= "NULL" WHERE q10_part_14= "ERROR";
 UPDATE data_sql SET  q10_part_15= "NULL" WHERE q10_part_15= "ERROR";
 UPDATE data_sql SET  q10_part_16= "NULL" WHERE q10_part_16= "ERROR";
 UPDATE data_sql SET q10_other= "NULL" WHERE q10_other= "ERROR";
+UPDATE data_sql SET d482xta= "NULL" WHERE q10_other= "ERROR";
 
 
